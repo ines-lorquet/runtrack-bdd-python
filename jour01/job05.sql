@@ -1,3 +1,4 @@
+-- Active: 1706528666952@@127.0.0.1@3306@laplateforme
 INSERT INTO etudiant(nom,prenom,age,email) VALUES
     ('Spaghetti','Betty', 23,'betty.Spaghetti@laplateforme.io'),
     ('Steak','Chuck', 45,'chuck.steak@laplateforme.io'),
