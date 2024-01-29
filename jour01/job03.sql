@@ -7,3 +7,4 @@ CREATE TABLE etudiant (
     -> age INT NOT NULL,
     -> email VARCHAR(255) NOT NULL
     -> );
+    
