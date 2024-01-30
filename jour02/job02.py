@@ -1,8 +1,17 @@
-CREATE TABLE etage (
+    """
+    USE LaPlateforme;
+    
+    CREATE TABLE etage (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(255) NOT NULL,
-    prenom VARCHAR(255) NOT NULL,
-    age INT NOT NULL,
-    email VARCHAR(255) NOT NULL
+    nom VARCHAR(255),
+    numero INT,
+    superficie INT 
     );
     
+    CREATE TABLE salle (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255),
+    id_etage INT,
+    capacite INT 
+    );
+    """
