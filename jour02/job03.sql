@@ -90,7 +90,7 @@ CREATE TABLE `salle` (
 
 LOCK TABLES `salle` WRITE;
 /*!40000 ALTER TABLE `salle` DISABLE KEYS */;
-INSERT INTO `salle` VALUES (1,'Lounge',1,100),(2,'Studio',1,5),(3,'Broadcacting',2,50),(4,'Bocal Peda',2,4),(5,'Coworking',2,80),(6,'Studio Video',2,5);
+INSERT INTO `salle` VALUES (1,'Lounge',1,100),(2,'Studio Son',1,5),(3,'Broadcasting',2,50),(4,'Bocal Peda',2,4),(5,'Coworking',2,80),(6,'Studio Video',2,5);
 /*!40000 ALTER TABLE `salle` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -103,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-30 10:46:19
+-- Dump completed on 2024-01-30 10:54:15
