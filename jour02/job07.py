@@ -1,5 +1,5 @@
 import mysql.connector
-class Salarie:
+class Employe:
     def __init__(self, host, user, password, database):
         self.connection = mysql.connector.connect(
             host=host,
@@ -34,13 +34,13 @@ class Salarie:
         self.cursor.execute(sql, values)
         self.connection.commit()
 
-salarie_manager = Salarie("localhost", "root", "azerty", "LaPlateforme2")
-salarie_manager.create_employee("Personne", "Test", 4500.00, 2)
+employe_manager = Employe("localhost", "root", "azerty", "LaPlateforme2")
+employe_manager.create_employee("Personne", "Test", 4500.00, 2)
 # salarie_manager.read_all_employees()
-salarie_manager.update_employee_salary(1, 3800.00)
+employe_manager.update_employee_salary(1, 3800.00)
 # salarie_manager.read_all_employees()
 # salarie_manager.delete_employee(9)
-salarie_manager.read_all_employees()
+employe_manager.read_all_employees()
 
 """
 CREATE DATABASE LaPlateforme2;
