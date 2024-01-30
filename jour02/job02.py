@@ -1,4 +1,4 @@
-    """
+"""
     USE LaPlateforme;
     
     CREATE TABLE etage (
