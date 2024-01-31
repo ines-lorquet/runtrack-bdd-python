@@ -13,3 +13,4 @@ result = cursor.fetchone()
 print("La capacité de toutes les salles est de :",result[0])
 
 cursor.close()
+bd.close()
