@@ -33,6 +33,9 @@ class Employe:
         values = (employee_id,)
         self.cursor.execute(sql, values)
         self.connection.commit()
+        
+    def close(self):
+        self.connection.close()
 
 employe_manager = Employe("localhost", "root", "azerty", "LaPlateforme2")
 employe_manager.create_employee("Personne", "Test", 4500.00, 2)
@@ -41,6 +44,7 @@ employe_manager.update_employee_salary(1, 3800.00)
 # salarie_manager.read_all_employees()
 # salarie_manager.delete_employee(9)
 employe_manager.read_all_employees()
+employe_manager.close()
 
 """
 CREATE DATABASE LaPlateforme2;
