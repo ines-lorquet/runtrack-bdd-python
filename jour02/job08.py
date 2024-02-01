@@ -18,7 +18,7 @@ class ZooManager:
 
     def supprimer_animal(self, animal_id):
         sql = "DELETE FROM animal WHERE id = %s"
-        values = (animal_id)
+        values = (animal_id,)
         self.cursor.execute(sql, values)
         self.connection.commit()
 
@@ -64,13 +64,13 @@ zoo_manager = ZooManager("localhost", "root", "azerty", "Zoo")
 
 # zoo_manager.modifer_animal(1, {'nom': 'Lion'})
 
-# zoo_manager.supprimer_animal(2)
+# zoo_manager.supprimer_animal(4)
 
 zoo_manager.animaux()
-zoo_manager.cages()
+# zoo_manager.cages()
 
-zoo_manager.animaux_cages()
-zoo_manager.calculate_total_cage()
+# zoo_manager.animaux_cages()
+# zoo_manager.calculate_total_cage()
 zoo_manager.close_connection()
 
 """
